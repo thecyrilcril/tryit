@@ -1,0 +1,23 @@
+@tailwind base;
+
+[x-cloak] { display: none !important; }
+
+html::-webkit-scrollbar {
+  @apply w-2 px-2 h-1;
+}
+html::-webkit-scrollbar-track {
+  @apply bg-slate-200 bg-opacity-70 px-2;
+}
+html::-webkit-scrollbar-thumb {
+  @apply w-2 bg-gray-700 bg-opacity-70 rounded-md border border-slate-700;
+}
+
+@supports (scrollbar-color: red  blue) {
+  html {
+    scrollbar-color: #334155 #e2e8f0;
+    scrollbar-width: thin;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
